@@ -196,3 +196,336 @@
 // //convert string into lower case letter
 // let myName = ('Grace Hopper'.toLowerCase());
 // console.log(`My name is ${myName}. I am ${myAgeInDogYears} years old in dog years.`);
+
+
+                                //LESSON 3:
+                            //Conditional Statements
+// let sale = true;
+// sale = false;
+// if (sale) {
+//   console.log('Time to buy!');
+// }
+
+                            // If...Else Statements
+// let sale = true;
+
+// sale = false;
+
+// if (sale) {
+//   console.log('Time to buy!');
+// } else {
+//   console.log('Time to wait for a sale.')
+// }
+
+                            // Comparison Operators
+// let hungerLevel = 7;
+// if(hungerLevel>7){
+//     console.log('Time to eat!');
+// }else{
+//   console.log('We can eat later!');
+// }
+
+                            // Logical Operators
+// let mood = 'sleepy';
+// let tirednessLevel = 6;
+// if(tirednessLevel>8){
+//   console.log("mood is sleepy");
+// }
+
+                            // Truthy and Falsy
+// let wordCount = 1;
+
+// if (wordCount) {
+//   console.log("Great! You've started your work!");
+// } else {
+//   console.log('Better get to work!');
+// }
+
+
+// let favoritePhrase = '';
+
+// if (favoritePhrase) {
+//   console.log("This string doesn't seem to be empty.");
+// } else {
+//   console.log('This string is definitely empty.');
+// }
+
+
+
+                            // FALSY AND TRULY VALUES.
+// 0
+// null
+// undefined
+// NaN
+// ''
+// 0n
+// -0
+// these are all falsy values others all values are truly values empty array, empty object
+
+
+// console.log(Boolean(0));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean(NaN));
+// console.log(Boolean(''));
+// console.log(Boolean(0n));
+// console.log(Boolean(-0));
+
+                            // another example
+// let tool = '';
+
+// // Use short circuit evaluation to assign  writingUtensil variable below:
+// let writingUtensil = "pen"||"tool";
+
+// console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+
+//Ternary Operator
+let isLocked = false;
+
+if (isLocked) {
+  console.log('You will need a key to open the door.');
+} else {
+  console.log('You will not need a key to open the door.');
+}
+
+// let isCorrect = true;
+
+// if (isCorrect) {
+//   console.log('Correct!');
+// } else {
+//   console.log('Incorrect!');
+// }
+
+// let favoritePhrase = 'Love That!';
+
+// if (favoritePhrase === 'Love That!') {
+//   console.log('I love that!');
+// } else {
+//   console.log("I don't love that!");
+// }
+
+                    // Else If Statements
+// let season = 'summer';
+
+// if (season === 'spring') {
+//   console.log('It\'s spring! The trees are budding!');
+// } else if(season === 'winter') {
+//   console.log('It\'s winter! Everything is covered in snow.');
+// } else if(season === 'fall') {
+//   console.log('It\'s fall! Leaves are falling!');
+// } else if(season === 'summer') {
+//   console.log('It\'s sunny and warm because it\'s summer!');
+// } else {
+//   console.log('Invalid season.');
+// }
+
+                    //The switch keyword
+// let athleteFinalPosition = 'first place';
+
+// switch(athleteFinalPosition){
+//   case 'first place':
+//     console.log('You get the gold medal!');
+//     break;
+//   case 'second place':
+//     console.log('You get the silver medal!');
+//     break;
+//   case 'third place':
+//     console.log('You get the bronze medal!');
+//     break;
+//   default:
+//     console.log('No medal awarded.');
+//     break;
+// }
+
+
+
+                                                //LESSON 4:
+                                         // function declaration:
+// function getReminder(){
+//     console.log(102%5);
+//     console.log('Water the plants.')
+//   }
+//   getReminder();
+//   function greetInSpanish(){
+//     console.log('Buenas tardes.');
+//   }
+//   greetInSpanish()
+
+
+                                         // Calling a Function
+// function sayThanks(){
+//     console.log('Thank you for your purchase! We appreciate your business.');
+//   }
+  
+//   sayThanks();
+//   sayThanks();
+//   sayThanks();
+
+
+                                        //Parameters and Arguments
+// function sayThanks(name) {
+//     console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
+//   }
+  
+//   sayThanks('Cole');
+
+//Default Parameters
+// function greeting (name = 'stranger') {
+//     console.log(`Hello, ${name}!`)
+//   }
+  
+//   greeting('Nick') // Output: Hello, Nick!
+  //greeting() // Output: Hello, stranger!
+//  another example of default paramter
+// function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs' ){
+//     console.log(`Remember to buy ${item1}`);
+//     console.log(`Remember to buy ${item2}`);
+//     console.log(`Remember to buy ${item3}`);
+//   }
+  
+
+                                        //RETURN
+// function rectangleArea(width, height) {
+//     let area = width * height;
+//     return area;
+//   }
+//   console.log(rectangleArea(5, 7))
+
+// // another example of return
+//   function monitorCount(rows, columns) {
+//     return rows * columns;
+//   }
+  
+//   const numOfMonitors = monitorCount(5, 4);
+  
+//   console.log(numOfMonitors);
+  
+                                                // //Helper Functions
+// function x(r,c){
+//     return r+c;
+// };
+// function y(r,c){//helper function
+//     return x(r,c) * 100;
+// }
+// const z = y(2,2);
+// console.log(z);
+
+// //another example
+// function monitorCount(rows, columns) {
+//     return rows * columns;
+//   }
+  
+//   function costOfMonitors(rows, columns) {
+//    return monitorCount(rows, columns)  * 200;
+//   }
+  
+//   const totalCost = costOfMonitors(5, 4);
+  
+//   console.log(totalCost);
+
+
+// Function Expressions
+// A function with no name is called an anonymous function. A function expression is often stored in a variable in order to refer to it.
+//is may jo variable hota hai wo as a identifier work karta hai.
+// const plantNeedsWater = function(day){//is may pantneedwater as a identifier work kar raha hai
+//     if(day === 'Wednesday'){
+//       return true;
+//     }
+//     else{
+//       return false;
+//     }
+//   }
+//   plantNeedsWater('Tuesday');
+//   console.log(plantNeedsWater('Tuesday'));
+
+
+
+//Arrow Functions
+// const rectangleArea = (width, height) => {
+//     let area = width * height;
+//     return area;
+//   };
+
+//another example of arrow function
+// const plantNeedsWater = (day) => {
+//     if (day === 'Wednesday') {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   };
+  
+
+
+                                    // Concise Body Arrow Functions
+// const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+                                                // LESSON 5
+                                            // Blocks and Scope
+// const city = 'New York City';
+// const logCitySkyline = () => {
+//   let skyscraper = 'Empire State Building';
+//   return 'The stars over the ' + skyscraper + ' in ' + city;
+
+// }
+// console.log(logCitySkyline());
+
+                                            //another example
+// const satellite = 'The Moon';
+// const galaxy = 'The Milky Way';
+// const stars = 'North Star';
+// const callMyNightSky = () => {
+//   return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+// }
+// console.log(callMyNightSky());
+
+                                                //block scope
+// const logSkyColor = () => {
+//     let color = 'blue'; 
+//     console.log(color); // Prints "blue"
+//   };
+  
+//   logSkyColor(); // Prints "blue"
+//   console.log(color); // throws a ReferenceError
+
+                                        //another example of block
+// const logVisibleLightWaves = () => {
+//     const lightWaves = 'Moonlight';
+//     console.log(lightWaves);
+//   };
+  
+  
+//   logVisibleLightWaves();
+  
+//   //console.log(lightWaves);
+
+                                            //scope pollution
+// let num = 50;
+
+// const logNum = () => {
+//   num = 100; // Take note of this line of code
+//   console.log(num);
+// };
+
+// logNum(); // Prints 100
+// console.log(num); // Prints 100
+
+
+                                        // Practice Good Scoping
+// const logVisibleLightWaves = () => {
+//     let lightWaves = 'Moonlight';
+//       let region = 'The Arctic';
+//     // Add if statement here:
+//     if(region === 'The Arctic'){
+//       let lightWaves = 'Northern Lights';
+//       console.log(lightWaves);
+//     }
+  
+//     console.log(lightWaves);
+//     console.log()
+    
+//   };
+  
+//   logVisibleLightWaves();
+
