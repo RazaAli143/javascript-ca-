@@ -281,13 +281,13 @@
 
 
 //Ternary Operator
-let isLocked = false;
+// let isLocked = false;
 
-if (isLocked) {
-  console.log('You will need a key to open the door.');
-} else {
-  console.log('You will not need a key to open the door.');
-}
+// if (isLocked) {
+//   console.log('You will need a key to open the door.');
+// } else {
+//   console.log('You will not need a key to open the door.');
+// }
 
 // let isCorrect = true;
 
@@ -528,4 +528,683 @@ if (isLocked) {
 //   };
   
 //   logVisibleLightWaves();
+
+// Leeson 6
+// Create an Array
+// const hobbies = ['kayaking', 'snowboarding', 'napping'];
+
+// console.log(hobbies);
+
+
+                                  // Accessing Elements
+// const hello = 'Hello World';
+// console.log(hello[7]);
+// Output: W
+
+                              //another example Accessing Elements
+// const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+
+// const listItem = famousSayings[0];
+
+// console.log(famousSayings[2]);
+
+// console.log(famousSayings[3]);
+
+
+                                  // Update Elements
+// let seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
+
+// seasons[3] = 'Autumn';
+// console.log(seasons); 
+//Output: ['Winter', 'Spring', 'Summer', 'Autumn']
+
+// another example
+// let groceryList = ['bread', 'tomatoes', 'milk'];
+
+// groceryList[1] = 'avocados'; 
+
+                              // Arrays with let and const
+// let sampleArr = [1, 2, 3];
+// sampleArr = ['a string'];
+// console.log(sampleArr);
+
+//another example
+// let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+// const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+// condiments[0] = 'Mayo';
+
+// console.log(condiments);
+
+// condiments = ['Mayo'];
+// console.log(condiments);
+
+// utensils[3] = 'Spoon';
+// console.log(utensils);
+
+
+                            //this is simple to find the length of string 
+// let x = 'hello world';
+// console.log(x.length);
+
+                                // The .length property
+// const newYearsResolutions = ['Keep a journal', 'Take a falconry class'];
+
+// console.log(newYearsResolutions.length);
+// // Output: 2
+
+                                    //another example
+// const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
+
+// console.log(objectives.length);
+
+
+                                  // The .push() Method
+// const itemTracker = ['item 0', 'item 1', 'item 2'];
+
+// itemTracker.push('item 3', 'item 4');
+
+// console.log(itemTracker); 
+// // Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+
+
+                                //another example
+// const chores = ['wash dishes', 'do laundry', 'take out trash'];
+// chores.push('item4','item5');
+// console.log(chores);
+
+
+                                // The .pop() Method:
+// const newItemTracker = ['item 0', 'item 1', 'item 2'];
+
+// const removed = newItemTracker.pop();
+
+// console.log(newItemTracker); 
+// // Output: [ 'item 0', 'item 1' ]
+// console.log(removed);
+// // Output: item 2
+
+
+                              //another example
+// const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+// chores.pop();
+// console.log(chores);
+
+
+//More Array Methods
+// const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+// groceryList.shift();
+
+// console.log(groceryList);
+
+// groceryList.unshift('popcorn');
+
+// console.log(groceryList);
+
+// console.log(groceryList.slice(1, 4));
+
+// console.log(groceryList);
+
+// const pastaIndex = groceryList.indexOf('pasta');
+
+// console.log(pastaIndex);
+
+
+
+                                            // Arrays and Functions
+// const flowers = ['peony', 'daffodil', 'marigold'];
+
+// function addFlower(arr) {
+//   arr.push('lily');
+// }
+
+// addFlower(flowers);
+
+// console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+
+
+                                          //another example
+// const x = [1,2,3,4,5];
+// function add(rr){
+//   rr.push(7);
+// }
+// add(x);
+// console.log(x);
+
+
+                                          //another example
+// const concept = ['arrays', 'can', 'be', 'mutated'];
+
+// function changeArr(arr){
+//   arr[3] = 'MUTATED';
+// }
+
+// changeArr(concept);
+// console.log(concept);
+
+// function removeElement(newArr){
+//    x = newArr.pop();
+// }
+// removeElement(concept);
+// console.log(concept);
+// console.log(x);
+
+
+                                            // Nested Arrays
+// const nestarr = [[1,2],[3,4]];
+// // console.log(nestarr[0][0]);//go to the array of 0 index and print the element of array 0 index 0
+// console.log(nestarr[1][1]);
+
+
+                                          //another example
+// const numberClusters = [[1,2],[3,4],[5,6]];
+// const target = numberClusters[2][1];
+
+
+                                                //LESSON 7:
+                                                  // LOOP
+                                                //for loop
+// Write your code below
+// for(let x = 5; x < 11; x++){
+//   console.log(x);
+// }
+
+                                          //Looping in Reverse
+// The loop below loops from 0 to 3. Edit it to loop backwards from 3 to 0
+// for (let counter = 0; counter < 4; counter++){
+//   console.log(counter);
+// }
+
+// for (let counter = 3; counter >= 0; counter--){
+//   console.log(counter);
+// }
+
+
+                                          //Looping through Arrays
+// const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+// for (let i = 0; i < animals.length; i++){
+//   console.log(animals[i]);
+// }
+
+                                          //another example
+// const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+// // Write your code below
+// for (let i = 0; i < vacationSpots.length; i++ ){
+//   console.log('I would love to visit ' + vacationSpots[i]);
+// }
+
+
+                                          // Nested Loops
+// const x = [1,2,3,4,5];
+// const y =[3,4,5,5,6,7,8];
+// for(let i = 0; i < x.length; i++){
+//   for(let j = 0; j < y.length; j++){
+//     if(x[i] === y[j]){
+//       console.log('this is the same number' + x[i]);
+//     }
+//   }
+// }
+
+//another example same to the previuos example.
+// const myArray = [6, 19, 20];
+// const yourArray = [19, 81, 2];
+// for (let i = 0; i < myArray.length; i++) {
+//   for (let j = 0; j < yourArray.length; j++) {
+//     if (myArray[i] === yourArray[j]) {
+//       console.log('Both arrays have the number: ' + yourArray[j]);
+//     }
+//   }
+// }
+
+//                                          //another example
+// const bobsFollowers = ['friend1','friend2','friend3','friend4'];
+// const tinasFollowers = ['friend1','friend2','friend'];
+// const mutualFollowers = [];
+// for(let i=0;i<bobsFollowers.length;i++){
+//   for(let j=0;j<tinasFollowers.length;j++){
+//     if(bobsFollowers[i] === tinasFollowers[j]){
+//       // console.log(bobsFollowers[i]);
+//       mutualFollowers.push(bobsFollowers[i]);
+//       console.log(mutualFollowers);
+//     }
+    
+//   }
+// }
+
+                                                //while loop
+// A for loop that prints 1, 2, and 3
+// for (let counterOne = 1; counterOne < 4; counterOne++){
+//   console.log(counterOne);
+// }
+
+// // A while loop that prints 1, 2, and 3
+// let counterTwo = 1;
+// while (counterTwo < 4) {
+//   console.log(counterTwo);
+//   counterTwo++;
+// }
+
+                                        //another example but not understand
+// const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// // Write your code below
+// let currentCard;
+
+// while (currentCard !== 'spade') {
+//   currentCard = cards[Math.floor(Math.random() * 4)];
+// 	console.log(currentCard);
+// }
+
+                                                //do while loop
+//write the code below
+// let cupsOfSugarNeeded = 3;
+// let cupsAdded = 0;
+
+// do{
+//   cupsAdded++
+//   console.log(cupsAdded + 'cup was added');
+// }while(cupsAdded < cupsOfSugarNeeded);
+
+
+                                              // The break Keyword
+// for (let i = 0; i < 99; i++) {
+//   if (i > 2 ) {
+//      break;//agar hum break nhi lagahay gay tu loop 99 time chalay ga.
+//   }
+//   console.log('Banana.');
+// }
+
+// console.log('Orange you glad I broke out the loop!');
+
+                                                  //another example
+//this code us run by one time because its has break keyword.
+// const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+// Write your code below
+// for(let i=0;i<rapperArray.length;i++){
+//   console.log(rapperArray[i]);
+//   console.log("And if you don't know, now you know.");
+//   console.log('Notorious B.I.G.');
+//   break;
+// }
+
+
+//LESSON 8:
+// Higher-Order Functions
+// for (let i = 1; i <= 3; i++) {
+//   console.log(i);
+// }
+
+
+// Functions as Data
+// const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+//   for(let i = 1; i <= 1000000; i++) {
+//     if ( (2 + 2) != 4) {
+//       console.log('Something has gone very wrong :( ');
+//     }
+//   }
+// };
+
+// // Write your code below
+// const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+// isTwoPlusTwo();
+// console.log(isTwoPlusTwo.name);
+
+// const higherOrderFunc = param => {
+//   param();
+//   return `I just invoked ${param.name} as a callback function!`
+// }
+ 
+// const anotherFunc = () => {
+//   return 'I\'m being invoked by the higher-order function!';
+// }
+
+// higherOrderFunc(anotherFunc);
+
+
+                                        //example of higher order gunction
+// const arr  = [1,2,3,4];
+// const arr2 = [];
+// for(let i = 0; i < arr.length; i++){
+//   arr2.push(arr[i] * 2);
+// }
+// console.log(arr2);
+
+
+                                          // LESSON 9:
+                                // Introduction to Iterators
+                                  // The .forEach() Method
+// const x = [1,2,3,4,5];
+// x.forEach( x) => {
+//   console.log(x);
+// })
+
+                               // //another example
+// const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// // Iterate over fruits below
+// fruits.forEach(fruit => console.log(`I want to eat a ${fruit}.`))
+
+
+                                // The .map() Method
+
+// const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// // Create the secretMessage array below
+// const secretMessage = animals.map(animal => animal[0]);
+
+// console.log(secretMessage.join(''));
+
+// const bigNumbers = [100, 200, 300, 400, 500];
+
+// // Create the smallNumbers array below
+// const smallNumbers = bigNumbers.map(num => num/100);
+
+// console.log(smallNumbers)
+
+
+                                //The .filter() Method
+// const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// // Call .filter() on randomNumbers below
+
+
+// const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+// // Call .filter() on favoriteWords below
+
+
+                              //The .findIndex() Method
+// const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+// const foundAnimal = animals.findIndex(animal => {
+//   return animal === 'elephant';
+// });
+
+// const startsWithS = animals.findIndex(animal => {
+//   return animal[0] === 's' ? true : false;
+// });
+
+
+                              //The .reduce() Method
+// const numbers = [1, 2, 4, 10];
+
+// const summedNums = numbers.reduce((accumulator, currentValue) => {
+//   return accumulator + currentValue
+// })
+
+// console.log(summedNums) // Output: 17
+
+                           // Iterator Documentation
+// const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// // Something is missing in the method call below
+
+// console.log(words.some(word => {
+//   return word.length < 6;
+// }));
+
+                          // // Use filter to create a new array
+// const interestingWords = words.filter((word) => {return word.length > 5});
+
+
+// // Make sure to uncomment the code below and fix the incorrect code before running it
+
+// console.log(interestingWords.every((word) => {return word.length > 5}));
+
+
+                        // Choose the Right Iterator
+// const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
+
+// const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+// //  Choose a method that will return undefined
+// cities.method(city => console.log('Have you visited ' + city + '?'));
+
+// // Choose a method that will return a new array
+// const longCities = cities.method(city => city.length > 7);
+
+// // Choose a method that will return a single value
+// const word = cities.method((acc, currVal) => {
+//   return acc + currVal[0]
+// }, "C");
+
+// console.log(word)
+
+// // Choose a method that will return a new array
+// const smallerNums = nums.method(num => num - 5);
+
+// // Choose a method that will return a boolean value
+// nums.method(num => num < 0);
+
+
+                                          // LESSON 10
+                                  // Introduction to Objects
+// let spaceship = {
+//   homePlanet: 'Earth',
+//   color: 'silver'
+// };
+// console.log(spaceship.homePlanet); // Returns 'Earth',
+// console.log(spaceship.color); // Returns 'silver',
+
+                                  // Accessing Properties
+// let spaceship = {
+//   homePlanet: 'Earth',
+//   color: 'silver',
+//   'Fuel Type': 'Turbo Fuel',
+//   numCrew: 5,
+//   flightPath: ['Venus', 'Mars', 'Saturn']
+// };
+
+// // Write your code below
+
+// let crewCount = spaceship.numCrew;
+
+// let planetArray = spaceship.flightPath;
+
+// Bracket Notation to access the object
+
+                                          // Bracket Notation(2nd method to access the object)
+// let spaceship = {
+//   'Fuel Type': 'Turbo Fuel',
+//   'Active Duty': true,
+//   homePlanet: 'Earth',
+//   numCrew: 5
+// };
+// console.log(spaceship['Active Duty']);   // Returns true
+// console.log(spaceship['Fuel Type']);   // Returns  'Turbo Fuel'
+// console.log(spaceship['numCrew']);   // Returns 5
+// console.log(spaceship['!!!!!!!!!!!!!!!']);   // Returns undefined
+
+
+//another example
+// let spaceship = {
+//   'Fuel Type' : 'Turbo Fuel',
+//   'Active Mission' : true,
+//   homePlanet : 'Earth', 
+//   numCrew: 5
+//  };
+
+// let propName =  'Active Mission';
+
+
+// // Write your code below
+
+// let isActive = spaceship['Active Mission'];
+
+// console.log(spaceship[propName]);
+
+// //2nd method to find the output
+// // console.log(spaceship[propName]);
+
+                                        // Property Assignment
+// const spaceship = {
+//   'Fuel Type': 'Turbo Fuel',
+//   homePlanet: 'Earth',
+//   mission: 'Explore the universe' 
+// };
+// console.log(spaceship["Fuel Type"]); 
+// console.log(delete spaceship.mission);  // Removes the mission property
+
+                                      //another example
+// let spaceship = {
+//   'Fuel Type' : 'Turbo Fuel',
+//   homePlanet : 'Earth',
+//   color: 'silver',
+//   'Secret Mission' : 'Discover life outside of Earth.'
+// };
+
+// // Write your code below
+
+// console.log(spaceship.color = 'glorious gold');
+
+// console.log(spaceship.numEngines = 9);
+
+// console.log(delete spaceship['Secret Mission']);//this  is use to delete the object and give answer in true form
+
+
+                                    // Methods in Objects
+// let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+// // Write your code below
+// let alienShip = {
+//   retreat(){
+//     console.log(retreatMessage);
+//   },
+//   takeOff(){
+//     console.log('Spim... Borp... Glix... Blastoff!');
+//   }
+// };
+// alienShip.retreat();
+// alienShip.takeOff();
+
+
+
+                                                // Nested Objects
+// let spaceship = {
+//   passengers: [{name: 'Space Dog'}], 
+//   telescope: {
+//     yearBuilt: 2018,
+//     model: "91031-XLT",
+//     focalLength: 2032 
+//   },
+//   crew: {
+//     captain: { 
+//       name: 'Sandra', 
+//       degree: 'Computer Engineering', 
+//       encourageTeam() { console.log('We got this!') },
+//      'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+//   },
+//   engine: {
+//     model: "Nimbus2000"
+//   },
+//   nanoelectronics: {
+//     computer: {
+//       terabytes: 100,
+//       monitors: "HD"
+//     },
+//     'back-up': {
+//       battery: "Lithium",
+//       terabytes: 50
+//     }
+//   }
+// }; 
+
+// let capFave = spaceship.crew.captain['favorite foods'][0];
+
+// let firstPassenger = spaceship.passengers[0];
+
+                                            // Pass By Reference
+// const spaceship = {
+//   homePlanet : 'Earth',
+//   color : 'silver'
+// };
+ 
+// let paintIt = obj => {
+//   obj.color = 'glorious gold'
+// };
+ 
+// paintIt(spaceship);
+ 
+// spaceship.color // Returns 'glorious gold'
+ 
+
+                                          //another example
+// let spaceship = {
+//   'Fuel Type' : 'Turbo Fuel',
+//   homePlanet : 'Earth'
+// };
+
+// // Write your code below
+
+// let greenEnergy = obj => {
+//   obj['Fuel Type'] = 'avocado oil';
+// }
+
+// let remotelyDisable = obj => {
+//   obj.disabled = true;
+// }
+
+// greenEnergy(spaceship);
+
+// remotelyDisable(spaceship);
+
+// console.log(spaceship)
+
+
+                                              //Looping Through Objects
+// let spaceship = {
+//   crew: {
+//   captain: { 
+//       name: 'Lily', 
+//       degree: 'Computer Engineering', 
+//       cheerTeam() { console.log('You got this!') } 
+//       },
+//   'chief officer': { 
+//       name: 'Dan', 
+//       degree: 'Aerospace Engineering', 
+//       agree() { console.log('I agree, captain!') } 
+//       },
+//   medic: { 
+//       name: 'Clementine', 
+//       degree: 'Physics', 
+//       announce() { console.log(`Jets on!`) } },
+//   translator: {
+//       name: 'Shauna', 
+//       degree: 'Conservation Science', 
+//       powerFuel() { console.log('The tank is full!') } 
+//       }
+//   }
+// }; 
+
+// // Write your code below
+
+// for (let crewMember in spaceship.crew) {
+// console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
+// };
+
+// for (let crewMember in spaceship.crew) {
+// console.log(`${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree}`)
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

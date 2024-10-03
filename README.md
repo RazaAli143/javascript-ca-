@@ -134,3 +134,70 @@ LESSON 6:
 
 Arrays:
 Array can store any datatyoe and string()
+(OR)
+Arrays are lists of ordered, stored data that can be of any data type.
+1.The array is represented by the square brackets [] and the content inside.
+2.Each content item inside an array is called an element.
+
+CODE SNIPPETS:
+Code snippets are small blocks of reusable code that you can add to a code file. Snippets usually contain often-used code blocks such as Try... Finally or If... Else blocks.
+
+
+.length
+1. Returns the number of characters in a string.
+2. One of an array’s built-in properties is length and it returns the number of items in the array.
+
+
+The .push() Method:
+Adds one or more elements to the end of the array and returns the new length
+
+
+The .pop() Method:
+Removes the last element of an array, decrements the array length, and returns the value that it removed.
+
+
+Nested Arrays:
+Array can store other arrays. When an array contains another array it is known as a nested array. Examine the example below:
+
+const nestedArr = [[1], [2, 3]];
+
+
+LESSON 7:
+LOOP:
+A loop is a programming tool that is used to repeat a set of instructions.
+
+break keyword:
+for (let i = 0; i < 99; i++) {
+  if (i > 2 ) {
+     break;
+  }
+  console.log('Banana.');
+}
+
+console.log('Orange you glad I broke out the loop!');
+
+
+LESSON 8:
+HIGHER ORER FUNCTION:
+
+FUNCTION:
+Functions are reusable pieces of code that perform tasks, process data, and possibly return values.
+
+LESSON 9:
+Q:What is the mean of invoke argument function.
+A:The code inside a function is not executed when the function is defined. The code inside a function is executed when the function is invoked. It is common to use the term "call a function" instead of "invoke a function".
+
+LESSON 9:
+iteration methods:
+The built-in JavaScript array methods that help us iterate are called iteration methods
+
+LESSON 10:
+OBJECTS:
+Two ways to access the objects.
+1.dot operator.(.)
+2.Bracket Notation['']
+
+
+IMPORTANT THING FOR OBJECT
+console.log(delete spaceship['Secret Mission']);//this  is use to delete the object and give answer in true form
+
